@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compose:up": "docker-compose -f infra/compose.yml up -d",
+    "compose:down": "docker-compose -f infra/compose.yml down"
   },
   "dependencies": {
     "react": "^18",
