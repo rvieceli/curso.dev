@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker-compose -f src/infra/compose.yml up -d",
+    "services:stop": "docker-compose -f src/infra/compose.yml stop",
+    "services:down": "docker-compose -f src/infra/compose.yml down",
     "build": "next build",
     "start": "next start",
     "lint:check": "next lint --max-warnings=0 --dir src",
@@ -13,9 +16,7 @@
     "format:check": "npm run lint:check; npm run prettier:check",
     "format:fix": "npm run lint:fix; npm run prettier:fix",
     "test": "jest",
-    "test:watch": "jest --watchAll",
-    "compose:up": "docker-compose -f src/infra/compose.yml up -d",
-    "compose:down": "docker-compose -f src/infra/compose.yml down"
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "next": "14.0.4",
