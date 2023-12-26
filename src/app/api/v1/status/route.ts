@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import * as database from "@infra/database";
+import * as database from "infra/database";
 
 export async function GET(request: NextRequest) {
   const result = await database.query("SELECT NOW();");
