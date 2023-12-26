@@ -12,6 +12,8 @@
     "prettier:fix":  "prettier --write src",
     "format:check": "npm run lint:check; npm run prettier:check",
     "format:fix": "npm run lint:fix; npm run prettier:fix",
+    "compose:up": "docker-compose -f src/infra/compose.yml up -d",
+    "compose:down": "docker-compose -f src/infra/compose.yml down"
   },
   "dependencies": {
     "next": "14.0.4",
