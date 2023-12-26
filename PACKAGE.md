@@ -23,6 +23,16 @@
 - `postcss`: peer dependency of `tailwindcss`
 - `autoprefixer`: peer dependency of `tailwindcss`
 
+## Database
+
+### Production
+
+- `pg`: Postgres client
+
+### Development
+
+- `@types/pg`
+
 ## Linting
 
 ### Development
