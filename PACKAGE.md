@@ -47,4 +47,5 @@
 ### Development
 
 - `jest`
+- `ts-node`: peer dependency of `jest`, it make possible to `jest` understand `.ts` files.
 - `@types/jest`
