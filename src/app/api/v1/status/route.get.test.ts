@@ -1,4 +1,4 @@
-import { ResponseBody } from "./route";
+import type { ResponseBody } from "./route";
 
 const ENDPOINT = "http://localhost:3000/api/v1/status";
 
